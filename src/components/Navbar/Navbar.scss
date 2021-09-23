@@ -1,0 +1,23 @@
+.navbar {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+
+  & ul {
+    background-color: red;
+    li {
+      margin: 10px;
+      cursor: pointer;
+      :after {
+        display: block;
+        content: "";
+        border-bottom: solid 3px #019fb6;
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out;
+      }
+      :hover:after {
+        transform: scaleX(1);
+      }
+    }
+  }
+}
