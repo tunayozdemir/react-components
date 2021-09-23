@@ -5,10 +5,6 @@ import NavList from '../../db/Navlist.json'
 function Navbar() {
   const [navList, setNavlist] = useState(NavList)
 
-  const hadleClik = () => {
-
-  }
-
   const getNavlist = () => {
     let result = navList.map((item) => console.log(item))
   }
